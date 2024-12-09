@@ -69,7 +69,7 @@ To use Grompt in your project, you only need to include the `Grompt.py` file. Fo
 You can configure Grompt using environment variables or a `.env` file. Here are the available configuration options:
 
 - `GROQ_API_KEY`: Your Groq API key (required)
-- `GROMPT_DEFAULT_MODEL`: The default Groq model to use (optional, default is 'llama3-groq-70b-8192-tool-use-preview')
+- `GROMPT_DEFAULT_MODEL`: The default Groq model to use (optional, default is 'llama-3.3-70b-versatile')
 - `GROMPT_DEFAULT_TEMPERATURE`: The default temperature for text generation (optional, default is 0.5)
 - `GROMPT_DEFAULT_MAX_TOKENS`: The default maximum number of tokens to generate (optional, default is 1024)
 
@@ -77,7 +77,7 @@ Example `.env` file:
 
 ```
 GROQ_API_KEY=your_api_key_here
-GROMPT_DEFAULT_MODEL=llama3-groq-70b-8192-tool-use-preview
+GROMPT_DEFAULT_MODEL=llama-3.3-70b-versatile
 GROMPT_DEFAULT_TEMPERATURE=0.7
 GROMPT_DEFAULT_MAX_TOKENS=2048
 ```
