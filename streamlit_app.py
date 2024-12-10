@@ -6,15 +6,6 @@ from dotenv import load_dotenv
 from dataclasses import dataclass
 from typing import List
 
-# Set the title with an emoji
-st.title("🚀 Grompt - Prompt Optimizer")
-
-# Add a logo image
-st.image("logo.png", width=200)  # Adjust the width as needed
-
-# Optional: Add a subtitle or description
-st.subheader("Optimize your prompts with Groq's LLM services!")
-
 load_dotenv()
 
 @dataclass
@@ -47,7 +38,10 @@ if GROQ_API_KEY:
 else:
     st.sidebar.warning("Please enter your GROQ API Key to use the app.")
 
-st.title("Grompt - Prompt Optimizer")
+st.set_page_config(
+    page_title="🚀 Grompt - Prompt Optimizer",
+    page_icon="logo.png"  # Update with the path to your favicon
+)
 st.write("Grompt uses Groq's LLM services to instantly optimize prompts.")
 
 # Add tabs for Basic and Advanced modes
