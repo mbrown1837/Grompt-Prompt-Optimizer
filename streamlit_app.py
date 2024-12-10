@@ -30,9 +30,15 @@ DEFAULT_TEMPERATURE = float(os.getenv('GROMPT_DEFAULT_TEMPERATURE', '0.5'))
 DEFAULT_MAX_TOKENS = int(os.getenv('GROMPT_DEFAULT_MAX_TOKENS', '1024'))
 
 st.sidebar.title("Configuration")
-GROQ_API_KEY = st.sidebar.text_input("Enter your GROQ API Key:", type="password")
+GROQ_API_KEY = os.getenv('GROQ_API_KEY') or st.secrets.get('GROQ_API_KEY')
 
-if not GROQ_API_KEY:
+if GROQ_API_KEY:
+    st.sidebar.success("API key loaded successfully.")
+    if os.getenv('GROQ_API_KEY'):
+        st.sidebar.info("API key loaded from .env file.")
+    else:
+        st.sidebar.info("API key loaded from Streamlit secrets.")
+else:
     st.sidebar.warning("Please enter your GROQ API Key to use the app.")
 
 st.title("Grompt - Prompt Optimizer")
