@@ -6,6 +6,15 @@ from dotenv import load_dotenv
 from dataclasses import dataclass
 from typing import List
 
+# Set the title with an emoji
+st.title("🚀 Grompt - Prompt Optimizer")
+
+# Add a logo image
+st.image("path/to/your/logo.png", width=200)  # Adjust the width as needed
+
+# Optional: Add a subtitle or description
+st.subheader("Optimize your prompts with Groq's LLM services!")
+
 load_dotenv()
 
 @dataclass
