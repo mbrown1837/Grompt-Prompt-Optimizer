@@ -38,10 +38,10 @@ if GROQ_API_KEY:
 else:
     st.sidebar.warning("Please enter your GROQ API Key to use the app.")
 
-st.set_page_config(
-    page_title="🚀 Grompt - Prompt Optimizer",
+st.title("🚀 Grompt - Prompt Optimizer")
     page_icon="logo.png"  # Update with the path to your favicon
 )
+
 st.write("Grompt uses Groq's LLM services to instantly optimize prompts.")
 
 # Add tabs for Basic and Advanced modes
