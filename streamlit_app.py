@@ -40,7 +40,6 @@ else:
 
 st.title("🚀 Grompt - Prompt Optimizer")
     page_icon="logo.png"  # Update with the path to your favicon
-)
 
 st.write("Grompt uses Groq's LLM services to instantly optimize prompts.")
 
