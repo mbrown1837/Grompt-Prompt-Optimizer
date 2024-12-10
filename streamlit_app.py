@@ -46,7 +46,7 @@ if GROQ_API_KEY:
     st.sidebar.info("API key loaded from Streamlit secrets.")
 else:
     st.sidebar.warning("Please enter your GROQ API Key to use the app.")
-
+st.title("🚀 Grompt - Prompt Optimizer")
 st.write("Grompt uses Groq's LLM services to instantly optimize prompts.")
 
 # Add tabs for Basic and Advanced modes
