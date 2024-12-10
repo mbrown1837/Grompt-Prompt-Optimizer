@@ -6,15 +6,6 @@ from dotenv import load_dotenv
 from dataclasses import dataclass
 from typing import List
 
-# Add this at the beginning of your script, before any other Streamlit commands
-st.set_page_config(
-    page_title="Grompt - Prompt Optimizer",
-    page_icon="logo.png",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-
 load_dotenv()
 
 @dataclass
@@ -46,7 +37,8 @@ if GROQ_API_KEY:
     st.sidebar.info("API key loaded from Streamlit secrets.")
 else:
     st.sidebar.warning("Please enter your GROQ API Key to use the app.")
-st.title("🚀 Grompt - Prompt Optimizer")
+
+st.title("Grompt - Prompt Optimizer")
 st.write("Grompt uses Groq's LLM services to instantly optimize prompts.")
 
 # Add tabs for Basic and Advanced modes
