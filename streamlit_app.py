@@ -10,7 +10,7 @@ from typing import List
 st.title("🚀 Grompt - Prompt Optimizer")
 
 # Add a logo image
-st.image("/logo.png", width=200)  # Adjust the width as needed
+st.image("logo.png", width=200)  # Adjust the width as needed
 
 # Optional: Add a subtitle or description
 st.subheader("Optimize your prompts with Groq's LLM services!")
