@@ -8,11 +8,12 @@ from typing import List
 
 # Add this at the beginning of your script, before any other Streamlit commands
 st.set_page_config(
-    page_title="🚀 Grompt - Prompt Optimizer",
-    page_icon="logo.png",  # Make sure logo.png exists in your app's root directory
+    page_title="Grompt - Prompt Optimizer",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded"
-)[1]
+)
+
 
 load_dotenv()
 
